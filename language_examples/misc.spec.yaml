@@ -106,7 +106,7 @@
   scopesEnd:
     - comment.line.double-slash
 - source: '        myOptString '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: (
@@ -186,7 +186,7 @@
   scopes:
     - support.type.posix-reserved
 - source: ' syncGroup '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: dispatch_group_create
@@ -245,7 +245,7 @@
   scopes:
     - punctuation.section.block.begin.bracket.curly
 - source: '        status '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: ' success'
@@ -292,7 +292,7 @@
   scopes:
     - support.type.posix-reserved
 - source: ' waitTime '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: dispatch_time
@@ -363,7 +363,7 @@
     - punctuation.section.arguments.end.bracket.round
   scopesEnd:
     - meta.function-call
-- source: ==
+- source: '=='
   scopes:
     - keyword.operator.comparison
 - source: '0'
@@ -430,7 +430,7 @@
   scopesEnd:
     - comment.line.double-slash
 - source: '    auto str '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: optionalString
@@ -555,7 +555,7 @@
   scopesEnd:
     - comment.line.double-slash
 - source: '    auto vector '
-- source: =
+- source: '='
   scopes:
     - keyword.operator.assignment
 - source: std

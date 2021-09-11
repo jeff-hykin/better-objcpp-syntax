@@ -1,11 +1,14 @@
 {
-    "name": "better-YOUR_LANG_EXTENSION_HERE-syntax",
-    "displayName": "Better YOUR_LANGUAGE Syntax",
+    "name": "better-objcpp-syntax",
+    "displayName": "Better Objective-C++ Syntax",
     "description": "",
     "version": "0.0.1",
     "icon": "icon.png",
     "scripts": {},
     "keywords": [
+        "Objective-C++",
+        "objcpp",
+        "obj-c++",
         "syntax",
         "textmate",
         "highlighting",
@@ -16,15 +19,22 @@
         "vscode": "^1.0.0"
     },
     "author": {
-        "name": "YOUR_NAME"
+        "name": "Jeff Hykin"
     },
-    "publisher": "YOUR_USERNAME",
+    "categories": [
+        "Programming Languages"
+    ],
+    "repository": {
+        "url": "https://github.com/jeff-hykin/better-objcpp-syntax",
+        "type": "git"
+    },
+    "publisher": "jeff-hykin",
     "contributes": {
         "grammars": [
             {
-                "language": "YOUR_LANG_EXTENSION_HERE",
-                "scopeName": "source.YOUR_LANG_EXTENSION_HERE",
-                "path": "./syntaxes/YOUR_LANG_EXTENSION_HERE.tmLanguage.json",
+                "language": "objcpp",
+                "scopeName": "source.objcpp",
+                "path": "./syntaxes/objcpp.tmLanguage.json",
                 "embeddedLanguages": {
                 }
             }
