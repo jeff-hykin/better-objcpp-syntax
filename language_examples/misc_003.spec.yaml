@@ -126,57 +126,46 @@
     - punctuation.section.block.begin.bracket.curly
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
-- source: '_window '
-- source: release
-  scopes:
-    - meta.function-call
-    - support.function.any-method
+    - punctuation.definition.begin.bracket.square
+- source: _window release
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
+    - meta.bracket.square.access
 - source: ;
   scopes:
     - punctuation.terminator.statement
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
-- source: '_viewController '
-- source: release
-  scopes:
-    - meta.function-call
-    - support.function.any-method
+    - punctuation.definition.begin.bracket.square
+- source: _viewController release
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
+    - meta.bracket.square.access
 - source: ;
   scopes:
     - punctuation.terminator.statement
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
+    - punctuation.definition.begin.bracket.square
 - source: super
   scopes:
     - variable.language
-- source: dealloc
-  scopes:
-    - meta.function-call
-    - support.function.any-method
+- source: ' dealloc'
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
+    - meta.bracket.square.access
 - source: ;
   scopes:
     - punctuation.terminator.statement
@@ -259,7 +248,7 @@
     - punctuation.section.block.begin.bracket.curly
 - source: self
   scopes:
-    - variable.language
+    - variable.other.object.access
 - source: .
   scopes:
     - punctuation.separator.dot-access
@@ -271,82 +260,59 @@
     - keyword.operator.assignment
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
+    - punctuation.definition.begin.bracket.square
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
+    - punctuation.definition.begin.bracket.square
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
-- source: 'UIWindow '
-- source: alloc
-  scopes:
-    - meta.function-call
-    - support.function.any-method
+    - punctuation.definition.begin.bracket.square
+- source: UIWindow alloc
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
-- source: initWithFrame
-  scopesBegin:
-    - meta.function-call
-    - support.function.any-method
-- source: ':'
-  scopes:
-    - punctuation.separator.arguments
-  scopesEnd:
-    - support.function.any-method
+    - meta.bracket.square.access
+- source: ' initWithFrame:'
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
+    - punctuation.definition.begin.bracket.square
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
-- source: 'UIScreen '
-- source: mainScreen
-  scopes:
-    - meta.function-call
-    - support.function.any-method
+    - punctuation.definition.begin.bracket.square
+- source: UIScreen mainScreen
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
-- source: bounds
-  scopes:
-    - meta.function-call
-    - support.function.any-method
+    - meta.bracket.square.access
+- source: ' bounds'
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.function-call
-    - meta.bracketed
+    - meta.bracket.square.access
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
-- source: autorelease
-  scopes:
-    - meta.function-call
-    - support.function.any-method
+    - meta.bracket.square.access
+- source: ' autorelease'
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
+    - meta.bracket.square.access
 - source: ;
   scopes:
     - punctuation.terminator.statement
@@ -360,7 +326,7 @@
     - comment.line.double-slash
 - source: self
   scopes:
-    - variable.language
+    - variable.other.object.access
 - source: .
   scopes:
     - punctuation.separator.dot-access
@@ -372,38 +338,26 @@
     - keyword.operator.assignment
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
+    - punctuation.definition.begin.bracket.square
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
+    - punctuation.definition.begin.bracket.square
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
-- source: 'ViewController '
-- source: alloc
-  scopes:
-    - meta.function-call
-    - support.function.any-method
+    - punctuation.definition.begin.bracket.square
+- source: ViewController alloc
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
-- source: initWithNibName
-  scopesBegin:
-    - meta.function-call
-    - support.function.any-method
-- source: ':'
-  scopes:
-    - punctuation.separator.arguments
-  scopesEnd:
-    - support.function.any-method
+    - meta.bracket.square.access
+- source: ' initWithNibName:'
 - source: '@"'
   scopesBegin:
     - string.quoted.double
@@ -415,33 +369,21 @@
     - punctuation.definition.string.end
   scopesEnd:
     - string.quoted.double
-- source: bundle
-  scopesBegin:
-    - support.function.any-method.name-of-parameter
-- source: ':'
-  scopes:
-    - punctuation.separator.arguments
-  scopesEnd:
-    - support.function.any-method.name-of-parameter
+- source: ' bundle:'
 - source: nil
   scopes:
     - constant.language
-  scopesEnd:
-    - meta.function-call
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
-- source: autorelease
-  scopes:
-    - meta.function-call
-    - support.function.any-method
+    - meta.bracket.square.access
+- source: ' autorelease'
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
+    - meta.bracket.square.access
 - source: ;
   scopes:
     - punctuation.terminator.statement
@@ -455,50 +397,41 @@
     - keyword.operator.assignment
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
+    - punctuation.definition.begin.bracket.square
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
-- source: 'SKNavigationController '
-- source: alloc
-  scopes:
-    - meta.function-call
-    - support.function.any-method
+    - punctuation.definition.begin.bracket.square
+- source: SKNavigationController alloc
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
-- source: initWithRootViewController
-  scopesBegin:
-    - meta.function-call
-    - support.function.any-method
-- source: ':'
-  scopes:
-    - punctuation.separator.arguments
-  scopesEnd:
-    - support.function.any-method
+    - meta.bracket.square.access
+- source: ' initWithRootViewController:'
 - source: self
   scopes:
-    - variable.language
-- source: .viewController
-  scopesEnd:
-    - meta.function-call
+    - variable.other.object.access
+- source: .
+  scopes:
+    - punctuation.separator.dot-access
+- source: viewController
+  scopes:
+    - variable.other.member
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
+    - meta.bracket.square.access
 - source: ;
   scopes:
     - punctuation.terminator.statement
 - source: self
   scopes:
-    - variable.language
+    - variable.other.object.access
 - source: .
   scopes:
     - punctuation.separator.dot-access
@@ -520,40 +453,38 @@
     - punctuation.terminator.statement
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
-- source: 'nav '
-- source: release
-  scopes:
-    - meta.function-call
-    - support.function.any-method
+    - punctuation.definition.begin.bracket.square
+- source: nav release
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
+    - meta.bracket.square.access
 - source: ;
   scopes:
     - punctuation.terminator.statement
 - source: '['
   scopesBegin:
-    - meta.bracketed
+    - meta.bracket.square.access
   scopes:
-    - punctuation.section.scope.begin
+    - punctuation.definition.begin.bracket.square
 - source: self
   scopes:
-    - variable.language
-- source: '.window '
-- source: makeKeyAndVisible
+    - variable.other.object.access
+- source: .
   scopes:
-    - meta.function-call
-    - support.function.any-method
+    - punctuation.separator.dot-access
+- source: window
+  scopes:
+    - variable.other.member
+- source: ' makeKeyAndVisible'
 - source: ']'
   scopes:
-    - punctuation.section.scope.end
+    - punctuation.definition.end.bracket.square
   scopesEnd:
-    - meta.bracketed
+    - meta.bracket.square.access
 - source: ;
   scopes:
     - punctuation.terminator.statement

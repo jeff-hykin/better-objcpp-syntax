@@ -16,11 +16,10 @@ grammar = Grammar.fromTmLanguage(File.join(__dir__, "modified.tmLanguage.json"))
 # Setup Grammar
 #
 # 
-    # Currently there are "anonymous" patterns that are inside the legacy original.tmLanguage.json
-    # they need to be made non-anonymous in order for us to be able to override the :$initial_context
-    # grammar[:$initial_context] = [
-    #     # (add more stuff here) (variables, strings, numbers)
-    # ]
+    grammar[:$initial_context] = [
+        # the existing pattern
+        grammar.repository[:anonymous_patterns]
+    ]
 
 # 
 # Helpers
