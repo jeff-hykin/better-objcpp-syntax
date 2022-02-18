@@ -882,7 +882,7 @@ packages:
   /parse-semver/1.1.1:
     resolution: {integrity: sha1-mkr9bfBj3Egm+T+6SpnPIj9mbLg=}
     dependencies:
-      semver: 5.7.1
+      semver: 5.3.0
     dev: true
 
   /parse5-htmlparser2-tree-adapter/6.0.1:
@@ -1039,11 +1039,6 @@ packages:
 
   /semver/5.3.0:
     resolution: {integrity: sha1-myzl094C0XxgEq0yaqa00M9U+U8=}
-    hasBin: true
-    dev: true
-
-  /semver/5.7.1:
-    resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
     hasBin: true
     dev: true
 
@@ -1302,7 +1297,7 @@ packages:
       osenv: 0.1.5
       parse-semver: 1.1.1
       read: 1.0.7
-      semver: 5.7.1
+      semver: 5.3.0
       tmp: 0.2.1
       typed-rest-client: 1.8.6
       url-join: 1.1.0
