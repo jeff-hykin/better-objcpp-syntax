@@ -17,8 +17,40 @@ grammar = Grammar.fromTmLanguage(File.join(__dir__, "modified.tmLanguage.json"))
 #
 # 
     grammar[:$initial_context] = [
-        # the existing pattern
-        grammar.repository[:anonymous_patterns]
+        # the existing patterns (but now we can inject new stuff between them)
+        :cpp_lang,
+        :anonymous_pattern_1,
+        :anonymous_pattern_2,
+        :anonymous_pattern_3,
+        :anonymous_pattern_4,
+        :anonymous_pattern_5,
+        :apple_foundation_functional_macros,
+        :anonymous_pattern_7,
+        :anonymous_pattern_8,
+        :anonymous_pattern_9,
+        :anonymous_pattern_10,
+        :anonymous_pattern_11,
+        :anonymous_pattern_12,
+        :anonymous_pattern_13,
+        :anonymous_pattern_14,
+        :anonymous_pattern_15,
+        :anonymous_pattern_16,
+        :anonymous_pattern_17,
+        :anonymous_pattern_18,
+        :anonymous_pattern_19,
+        :anonymous_pattern_20,
+        :anonymous_pattern_21,
+        :anonymous_pattern_22,
+        :anonymous_pattern_23,
+        :anonymous_pattern_24,
+        :anonymous_pattern_25,
+        :anonymous_pattern_26,
+        :anonymous_pattern_27,
+        :anonymous_pattern_28,
+        :anonymous_pattern_29,
+        :anonymous_pattern_30,
+        :bracketed_content,
+        :c_lang,
     ]
 
 # 
@@ -45,9 +77,54 @@ grammar = Grammar.fromTmLanguage(File.join(__dir__, "modified.tmLanguage.json"))
     variable = variableBounds[part_of_a_variable]
     
 # 
-# basic patterns
+# patterns
 # 
-    # none yet
+    grammar[:apple_foundation_functional_macros] = PatternRange.new(
+        tag_as: "meta.preprocessor.macro.callable.apple-foundation",
+        start_pattern: Pattern.new(
+            Pattern.new(
+                match: /\b(?:API_AVAILABLE|API_DEPRECATED|API_UNAVAILABLE|NS_AVAILABLE|NS_AVAILABLE_MAC|NS_AVAILABLE_IOS|NS_DEPRECATED|NS_DEPRECATED_MAC|NS_DEPRECATED_IOS|NS_SWIFT_NAME)/,
+                tag_as: "entity.name.function.preprocessor.apple-foundation",
+            ).maybe(
+                @spaces
+            ).then(
+                match: /\(/,
+                tag_as: "punctuation.section.macro.arguments.begin.bracket.round.apple-foundation",
+            )
+        ),
+        end_pattern: Pattern.new(
+            match: /\)/,
+            tag_as: "punctuation.section.macro.arguments.end.bracket.round.apple-foundation",
+        ),
+        # tag_content_as: "support.other.attribute", # <- alternative that doesnt double-tag the start/end
+        includes: [
+            :c_lang,
+        ],
+        # equivlent to:
+        # {
+        #     "name": "meta.preprocessor.macro.callable.apple-foundation",
+        #     "begin": "\\b(API_AVAILABLE|API_DEPRECATED|API_UNAVAILABLE|NS_AVAILABLE|NS_AVAILABLE_MAC|NS_AVAILABLE_IOS|NS_DEPRECATED|NS_DEPRECATED_MAC|NS_DEPRECATED_IOS|NS_SWIFT_NAME)\\s*(\\()",
+        #     "beginCaptures": {
+        #         "1": {
+        #             "name": "entity.name.function.preprocessor.apple-foundation"
+        #         },
+        #         "2": {
+        #             "name": "punctuation.section.macro.arguments.begin.bracket.round.apple-foundation"
+        #         }
+        #     },
+        #     "end": "\\)",
+        #     "endCaptures": {
+        #         "0": {
+        #             "name": "punctuation.section.macro.arguments.end.bracket.round.apple-foundation"
+        #         }
+        #     },
+        #     "patterns": [
+        #         {
+        #             "include": "#c_lang"
+        #         }
+        #     ]
+        # },
+    )
 
 # 
 # imports

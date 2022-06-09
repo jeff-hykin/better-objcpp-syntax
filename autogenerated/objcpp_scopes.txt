@@ -11,6 +11,7 @@ constant.other.variable.mac-classic.objcpp
 entity.name.function.destructor.objcpp
 entity.name.function.name-of-parameter.objcpp
 entity.name.function.objcpp
+entity.name.function.preprocessor.apple-foundation.objcpp
 entity.name.function.preprocessor.objcpp
 entity.name.type.objcpp
 entity.other.attribute-name.pragma.preprocessor.objcpp
@@ -68,6 +69,7 @@ meta.inherited-class.objcpp
 meta.interface-or-protocol.objcpp
 meta.preprocessor.diagnostic.objcpp
 meta.preprocessor.include.objcpp
+meta.preprocessor.macro.callable.apple-foundation.objcpp
 meta.preprocessor.macro.objcpp
 meta.preprocessor.objcpp
 meta.preprocessor.pragma.objcpp
@@ -98,6 +100,8 @@ punctuation.definition.string.begin.objcpp
 punctuation.definition.string.end.objcpp
 punctuation.definition.type.begin.objcpp
 punctuation.definition.type.end.objcpp
+punctuation.section.macro.arguments.begin.bracket.round.apple-foundation.objcpp
+punctuation.section.macro.arguments.end.bracket.round.apple-foundation.objcpp
 punctuation.section.scope.begin.objcpp
 punctuation.section.scope.end.objcpp
 punctuation.separator.arguments.objcpp
